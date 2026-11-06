@@ -1,6 +1,11 @@
 // Textos EN/ES. Cada elemento con data-i18n="clave" toma su texto de aqui.
 window.I18N = {
   en: {
+    more_cat: "See the full catalog", more_serv: "See all services", more_insp: "See more projects",
+    cta_title: "Ready to choose your countertop?", cta_body: "Free measurements and estimates anywhere in Oklahoma.",
+    pg_serv_h: "Services", pg_serv_p: "We fabricate and install countertops in our Oklahoma City shop, and remodel complete kitchens and bathrooms.",
+    pg_insp_h: "Inspiration", pg_insp_p: "Kitchens and bathrooms we have finished in Oklahoma. Tap a photo to see it larger.",
+    pg_contact_h: "Get a free quote", pg_contact_p: "Tell us about your project. Include the slab names you liked if you have them.",
     nav_insp: "Inspiration",
     insp_title: "Inspiration from finished projects",
     insp_body: "Kitchens and bathrooms we have completed in Oklahoma. Tap a photo to see it larger.",
@@ -56,6 +61,11 @@ window.I18N = {
     lang_btn: "ES"
   },
   es: {
+    more_cat: "Ver el catálogo completo", more_serv: "Ver todos los servicios", more_insp: "Ver más proyectos",
+    cta_title: "¿Listo para elegir tu encimera?", cta_body: "Medición y cotización gratis en todo Oklahoma.",
+    pg_serv_h: "Servicios", pg_serv_p: "Fabricamos e instalamos encimeras en nuestro taller de Oklahoma City, y remodelamos cocinas y baños completos.",
+    pg_insp_h: "Inspiración", pg_insp_p: "Cocinas y baños que hemos terminado en Oklahoma. Toca una foto para verla en grande.",
+    pg_contact_h: "Cotización gratis", pg_contact_p: "Cuéntanos de tu proyecto. Si ya tienes slabs favoritos, escribe sus nombres.",
     nav_insp: "Inspiración",
     insp_title: "Inspiración de proyectos terminados",
     insp_body: "Cocinas y baños que hemos terminado en Oklahoma. Toca una foto para verla en grande.",
@@ -127,6 +137,8 @@ window.I18N = {
     var wa = document.getElementById("fab-wa");
     if (wa) wa.href = "https://wa.me/" + VHP.whatsapp + "?text=" + encodeURIComponent(t("wa_text"));
     document.querySelectorAll(".bbb").forEach(function (el) { el.hidden = !VHP.bbbAccredited; });
+    document.querySelectorAll("a.mail-link").forEach(function (a) { a.href = "mailto:" + VHP.email; });
+    document.querySelectorAll("a.rev-link").forEach(function (a) { a.href = VHP.mapUrl; });
     document.querySelectorAll("a.map-link").forEach(function (a) { a.href = VHP.mapUrl; });
     document.querySelectorAll("a.fb-link").forEach(function (a) { a.href = VHP.facebook; });
     document.querySelectorAll("a.ig-link").forEach(function (a) { a.href = VHP.instagram; });

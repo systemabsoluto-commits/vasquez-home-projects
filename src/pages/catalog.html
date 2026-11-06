@@ -1,0 +1,52 @@
+<main>
+  <div class="cat-head page-head">
+    <div class="wrap">
+      <h1 data-i18n="cat_title"></h1>
+      <p data-i18n="cat_body"></p>
+      <p class="cat-meta"><span data-i18n="cat_updated"></span>: <span id="upd"></span>. <span data-i18n="cat_conf"></span></p>
+      <div class="sup-tabs" role="tablist">
+        <button role="tab" id="tab-a" data-s="a" data-i18n="tab_a"></button>
+        <button role="tab" id="tab-s" data-s="s" data-i18n="tab_s"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="coll" id="coll" aria-label="Collection"></div>
+      <label class="sr-only" for="f-type" data-i18n="filter_type"></label>
+      <select id="f-type"></select>
+      <label class="sr-only" for="f-fin" data-i18n="filter_finish"></label>
+      <select id="f-fin"></select>
+      <label class="sr-only" for="f-q" data-i18n="search_ph"></label>
+      <input id="f-q" type="search" data-i18n-ph="search_ph">
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="result-line">
+      <span id="count" role="status"></span>
+      <span class="sup-note" id="sup-note"></span>
+    </div>
+    <div class="cat-grid" id="grid"></div>
+    <div class="empty" id="empty" hidden><p data-i18n="no_results"></p><button class="linkbtn" id="clear" data-i18n="clear"></button></div>
+  </div>
+</main>
+
+<dialog class="slab-dlg" id="dlg" aria-labelledby="dlg-name">
+  <button class="dlg-close" id="dlg-close" aria-label="Close">&times;</button>
+  <div class="dlg-in">
+    <div class="dlg-photo"><img id="dlg-img" alt=""></div>
+    <div class="dlg-info">
+      <h2 id="dlg-name"></h2>
+      <p id="dlg-type" class="lede"></p>
+      <p id="dlg-sup"></p>
+      <h3 data-i18n="lots"></h3>
+      <ul class="lot-list" id="dlg-lots"></ul>
+      <div class="dlg-actions">
+        <a class="btn" id="dlg-ask" href="contact.html" data-i18n="ask_this"></a>
+        <a id="dlg-supurl" target="_blank" rel="noopener" data-i18n="view_supplier"></a>
+      </div>
+    </div>
+  </div>
+</dialog>

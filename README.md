@@ -2,7 +2,7 @@
 
 Sitio estático (HTML/CSS/JS) para GitHub Pages. Bilingüe EN/ES con el botón del menú.
 
-- `index.html` — portada, servicios, proceso, reseñas y cotización.
+- Las páginas (`index`, `catalog`, `inspiration`, `services`, `contact`) se generan con `python3 tools/build.py`. Editar el contenido en `src/pages/` y el pie en `src/footer.html`, luego correr el script.
 - `catalog.html` — catálogo de slabs en stock (Architectural Surfaces y Stratus Surfaces, Oklahoma City).
 - `js/config.js` — **teléfono, correo y zona de servicio** (cambiar aquí).
 - `js/i18n.js` — todos los textos en inglés y español.

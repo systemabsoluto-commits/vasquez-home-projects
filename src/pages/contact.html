@@ -1,0 +1,38 @@
+<main>
+  <div class="page-head">
+    <div class="wrap"><h1 data-i18n="pg_contact_h"></h1><p data-i18n="pg_contact_p"></p></div>
+  </div>
+  <section class="quote" id="quote" aria-labelledby="h-quote">
+    <div class="wrap">
+      <div>
+        <h2 id="h-quote" class="sr-only" data-i18n="quote_title"></h2>
+        <p><strong data-i18n="quote_free"></strong></p>
+        <ul class="recog-mini"><li data-i18n="rec_award1"></li><li data-i18n="rec_award2"></li><li class="bbb" hidden data-i18n="rec_bbb"></li></ul>
+        <ul class="contact-list">
+          <li><span data-i18n="call"></span>: <a data-tel href="#" data-vhp="phone"></a></li>
+          <li><a class="mail-link" href="#" data-vhp="email"></a></li>
+          <li><span data-i18n="visit"></span>: <a class="map-link" href="#" target="_blank" rel="noopener" data-vhp="address"></a></li>
+          <li><span data-i18n="hours_l"></span>: <span data-vhp="hours"></span></li>
+          <li><span data-vhp="area"></span></li>
+        </ul>
+      </div>
+      <form class="q" id="quote-form">
+        <div><label for="f-name" data-i18n="f_name"></label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div><label for="f-phone" data-i18n="f_phone"></label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
+        <div><label for="f-email" data-i18n="f_email"></label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+        <div><label for="f-proj" data-i18n="f_project"></label>
+          <select id="f-proj" name="project">
+            <option data-i18n="f_opt1"></option><option data-i18n="f_opt2"></option>
+            <option data-i18n="f_opt3"></option><option data-i18n="f_opt4"></option>
+          </select></div>
+        <div class="full"><label for="f-msg" data-i18n="f_msg"></label><textarea id="f-msg" name="msg"></textarea></div>
+        <div class="full"><button class="btn" type="submit" data-i18n="f_send"></button></div>
+        <p class="form-ok" id="form-ok" hidden data-i18n="f_sent" role="status"></p>
+      </form>
+    </div>
+  </section>
+  <section class="map-sec" aria-label="Map">
+    <iframe title="Vasquez Home Projects map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Vasquez+Home+Projects,+2620+S+Meridian+Ave,+Oklahoma+City,+OK+73108&amp;output=embed"></iframe>
+  </section>
+</main>

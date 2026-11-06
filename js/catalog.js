@@ -64,7 +64,7 @@
     $("dlg-type").textContent = typeName(it.t, data) + (it.s === "a" ? ", " + slabsTxt(it.n) + " " + t("in_stock") : "");
     $("dlg-sup").innerHTML = t("supplied_by") + " <strong>" + supName(it) + "</strong>";
     $("dlg-supurl").href = VHP.suppliers[it.s].url;
-    $("dlg-ask").href = "index.html?slab=" + encodeURIComponent(it.name + " (" + supName(it) + ")") + "#quote";
+    $("dlg-ask").href = "contact.html?slab=" + encodeURIComponent(it.name + " (" + supName(it) + ")") + "#quote";
     var ul = $("dlg-lots"); ul.innerHTML = "";
     var first;
     it.lots.forEach(function (l) {
