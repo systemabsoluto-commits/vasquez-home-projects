@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slab catalog | Vasquez Home Projects</title>
+<meta name="description" content="Granite, marble, quartzite, quartz and porcelain slabs in stock in Oklahoma City from Architectural Surfaces and Stratus Surfaces.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">Vasquez Home Projects<small data-vhp="area"></small></a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav-links">
+      <a href="catalog.html" aria-current="page" data-i18n="nav_catalog"></a>
+      <a href="index.html#services" data-i18n="nav_services"></a>
+      <a href="index.html#process" data-i18n="nav_process"></a>
+      <a class="btn" href="index.html#quote" data-i18n="nav_contact"></a>
+      <button class="lang-btn" data-i18n="lang_btn" aria-label="Change language / Cambiar idioma"></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="cat-head">
+    <div class="wrap">
+      <h1 data-i18n="cat_title"></h1>
+      <p data-i18n="cat_body"></p>
+      <p class="cat-meta"><span data-i18n="cat_updated"></span>: <span id="upd"></span>. <span data-i18n="cat_conf"></span></p>
+      <div class="sup-tabs" role="tablist">
+        <button role="tab" id="tab-a" data-s="a" data-i18n="tab_a"></button>
+        <button role="tab" id="tab-s" data-s="s" data-i18n="tab_s"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="coll" id="coll" aria-label="Collection"></div>
+      <label class="sr-only" for="f-type" data-i18n="filter_type"></label>
+      <select id="f-type"></select>
+      <label class="sr-only" for="f-fin" data-i18n="filter_finish"></label>
+      <select id="f-fin"></select>
+      <label class="sr-only" for="f-q" data-i18n="search_ph"></label>
+      <input id="f-q" type="search" data-i18n-ph="search_ph">
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="result-line">
+      <span id="count" role="status"></span>
+      <span class="sup-note" id="sup-note"></span>
+    </div>
+    <div class="cat-grid" id="grid"></div>
+    <div class="empty" id="empty" hidden><p data-i18n="no_results"></p><button class="linkbtn" id="clear" data-i18n="clear"></button></div>
+  </div>
+</main>
+
+<dialog class="slab-dlg" id="dlg" aria-labelledby="dlg-name">
+  <button class="dlg-close" id="dlg-close" aria-label="Close">&times;</button>
+  <div class="dlg-in">
+    <div class="dlg-photo"><img id="dlg-img" alt=""></div>
+    <div class="dlg-info">
+      <h2 id="dlg-name"></h2>
+      <p id="dlg-type" class="lede"></p>
+      <p id="dlg-sup"></p>
+      <h3 data-i18n="lots"></h3>
+      <ul class="lot-list" id="dlg-lots"></ul>
+      <div class="dlg-actions">
+        <a class="btn" id="dlg-ask" href="index.html#quote" data-i18n="ask_this"></a>
+        <a id="dlg-supurl" target="_blank" rel="noopener" data-i18n="view_supplier"></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><strong>Vasquez Home Projects</strong><br><a data-tel href="#" data-vhp="phone"></a><br><span data-vhp="area"></span></div>
+    <p data-i18n="foot_disc"></p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/common.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>
