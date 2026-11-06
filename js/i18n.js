@@ -3,7 +3,7 @@ window.I18N = {
   en: {
     nav_catalog: "Slab catalog", nav_services: "Services", nav_process: "How it works", nav_contact: "Get a quote",
     hero_title: "Countertops cut from the slab you pick",
-    hero_body: "Walk through more than 800 slabs in stock right now in Oklahoma City, choose the exact one for your kitchen or bath, and we template, fabricate and install it.",
+    hero_body: "Choose from more than 800 slabs in stock right now in Oklahoma City. We measure for free, fabricate in our shop on S Meridian Ave and install anywhere in Oklahoma.",
     hero_cta: "Browse slabs", hero_cta2: "Get a free quote",
     rack_note: "In stock in Oklahoma City",
     sup_title: "Two Oklahoma City suppliers, one catalog",
@@ -15,22 +15,22 @@ window.I18N = {
     col_quartz: "StratusQuartz®", col_porcelain: "StratusPorcelain™",
     feat_title: "A few slabs our clients ask about",
     serv_title: "What we install",
-    s1_t: "Kitchen countertops", s1_b: "Islands, perimeters, waterfalls and full-height backsplashes.",
+    s1_t: "Kitchen countertops", s1_b: "Granite, marble, quartz and quartzite for islands, perimeters and waterfall edges.",
     s2_t: "Bathroom vanities", s2_b: "Single and double vanities with undermount sinks cut in our shop.",
     s3_t: "Backsplashes and walls", s3_b: "Slab backsplashes, shower walls and fireplace surrounds.",
-    s4_t: "Remodel projects", s4_b: "Tear-out of old tops and coordination with plumbing and cabinets.",
+    s4_t: "Kitchen and bath remodeling", s4_b: "Plumbing, tile, cabinets, painting and flooring, down to the final cleaning.",
     proc_title: "How a countertop project works",
     p1_t: "Choose your slab", p1_b: "Browse the catalog, save the colors you like and see them in person at the supplier.",
-    p2_t: "Measure and template", p2_b: "We measure your cabinets and make an exact template of every piece.",
+    p2_t: "Free measurement", p2_b: "We measure your cabinets at no cost and make an exact template of every piece.",
     p3_t: "Fabrication", p3_b: "The slab is cut, edged and polished to the template.",
     p4_t: "Installation", p4_b: "We install, seal natural stone and leave the kitchen clean.",
-    rev_title: "What clients say", rev_note: "Sample reviews. Replace with real Google reviews.",
+    rev_title: "What clients say on Google", rev_note: "reviews on Google", rev_link: "Read all reviews",
     quote_title: "Get a free quote",
     quote_body: "Tell us about your project. Include the slab names you liked if you have them.",
     f_name: "Name", f_phone: "Phone", f_email: "Email", f_project: "Project", f_msg: "Details and slabs you like",
     f_opt1: "Kitchen countertops", f_opt2: "Bathroom vanity", f_opt3: "Backsplash or walls", f_opt4: "Other",
     f_send: "Send request", f_sent: "Your email app opened with the request ready to send.",
-    call: "Call us", serving: "Serving",
+    call: "Call us", serving: "Serving", visit: "Shop", hours_l: "Hours", quote_free: "Free measurements and estimates.",
     foot_disc: "Slab colors, names and photos are provided by our suppliers, Architectural Surfaces and Stratus Surfaces, and belong to them. Availability changes daily; confirm before choosing.",
     // catalogo
     cat_title: "Slab catalog",
@@ -49,7 +49,7 @@ window.I18N = {
   es: {
     nav_catalog: "Catálogo de slabs", nav_services: "Servicios", nav_process: "Cómo trabajamos", nav_contact: "Cotizar",
     hero_title: "Encimeras cortadas del slab que tú eliges",
-    hero_body: "Recorre más de 800 slabs en stock hoy en Oklahoma City, elige el tuyo para la cocina o el baño, y nosotros medimos, fabricamos e instalamos.",
+    hero_body: "Elige entre más de 800 slabs en stock hoy en Oklahoma City. Medimos gratis, fabricamos en nuestro taller de S Meridian Ave e instalamos en todo Oklahoma.",
     hero_cta: "Ver slabs", hero_cta2: "Cotización gratis",
     rack_note: "En stock en Oklahoma City",
     sup_title: "Dos proveedores de Oklahoma City, un solo catálogo",
@@ -61,22 +61,22 @@ window.I18N = {
     col_quartz: "StratusQuartz®", col_porcelain: "StratusPorcelain™",
     feat_title: "Algunos slabs que más nos piden",
     serv_title: "Lo que instalamos",
-    s1_t: "Encimeras de cocina", s1_b: "Islas, perímetros, cascadas y backsplash de altura completa.",
+    s1_t: "Encimeras de cocina", s1_b: "Granito, mármol, cuarzo y cuarcita para islas, perímetros y bordes en cascada.",
     s2_t: "Lavamanos de baño", s2_b: "Vanities sencillos y dobles con lavamanos bajo cubierta cortados en taller.",
     s3_t: "Backsplash y paredes", s3_b: "Backsplash en slab, paredes de ducha y chimeneas.",
-    s4_t: "Remodelaciones", s4_b: "Retiro de encimeras viejas y coordinación con plomería y gabinetes.",
+    s4_t: "Remodelación de cocinas y baños", s4_b: "Plomería, azulejo, gabinetes, pintura y pisos, hasta la limpieza final.",
     proc_title: "Cómo funciona un proyecto de encimeras",
     p1_t: "Elige tu slab", p1_b: "Revisa el catálogo, guarda los colores que te gustan y velos en persona en el proveedor.",
-    p2_t: "Medición y plantilla", p2_b: "Medimos tus gabinetes y hacemos una plantilla exacta de cada pieza.",
+    p2_t: "Medición gratis", p2_b: "Medimos tus gabinetes sin costo y hacemos una plantilla exacta de cada pieza.",
     p3_t: "Fabricación", p3_b: "El slab se corta, se perfila el borde y se pule según la plantilla.",
     p4_t: "Instalación", p4_b: "Instalamos, sellamos la piedra natural y dejamos la cocina limpia.",
-    rev_title: "Lo que dicen los clientes", rev_note: "Reseñas de ejemplo. Reemplazar con reseñas reales de Google.",
+    rev_title: "Lo que dicen los clientes en Google", rev_note: "reseñas en Google", rev_link: "Ver todas las reseñas",
     quote_title: "Cotización gratis",
     quote_body: "Cuéntanos de tu proyecto. Si ya tienes slabs favoritos, escribe sus nombres.",
     f_name: "Nombre", f_phone: "Teléfono", f_email: "Correo", f_project: "Proyecto", f_msg: "Detalles y slabs que te gustan",
     f_opt1: "Encimeras de cocina", f_opt2: "Lavamanos de baño", f_opt3: "Backsplash o paredes", f_opt4: "Otro",
     f_send: "Enviar solicitud", f_sent: "Se abrió tu correo con la solicitud lista para enviar.",
-    call: "Llámanos", serving: "Atendemos",
+    call: "Llámanos", serving: "Atendemos", visit: "Taller", hours_l: "Horario", quote_free: "Medición y cotización gratis.",
     foot_disc: "Los colores, nombres y fotos de los slabs son de nuestros proveedores, Architectural Surfaces y Stratus Surfaces. La disponibilidad cambia a diario; confírmala antes de elegir.",
     cat_title: "Catálogo de slabs",
     cat_body: "Colores en stock en nuestros proveedores de Oklahoma City. Toca un color para ver cada slab o lote.",
@@ -106,6 +106,9 @@ window.I18N = {
       var v = VHP[el.dataset.vhp]; el.textContent = typeof v === "object" ? v[vhpLang] : v;
     });
     document.querySelectorAll("a[data-tel]").forEach(function (a) { a.href = "tel:" + VHP.phoneHref; });
+    document.querySelectorAll("a.map-link").forEach(function (a) { a.href = VHP.mapUrl; });
+    document.querySelectorAll("a.fb-link").forEach(function (a) { a.href = VHP.facebook; });
+    document.querySelectorAll("a.ig-link").forEach(function (a) { a.href = VHP.instagram; });
     document.dispatchEvent(new Event("langchange"));
   };
   window.toggleLang = function () {

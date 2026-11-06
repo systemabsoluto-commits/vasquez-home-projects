@@ -105,16 +105,15 @@
     </div>
   </section>
 
-  <!-- TODO: reemplazar con reseñas reales de Google -->
   <section class="reviews" aria-labelledby="h-rev">
     <div class="wrap">
       <h2 id="h-rev" data-i18n="rev_title"></h2>
       <div class="rev-grid">
-        <blockquote>“They helped us pick a quartzite at the warehouse and had the kitchen installed the next week.”<cite>Sample client, Edmond</cite></blockquote>
-        <blockquote>“Clean seams, clean work site, and the price we were quoted.”<cite>Sample client, Moore</cite></blockquote>
-        <blockquote>“Nos explicaron la diferencia entre cuarzo y cuarcita y quedamos felices con el resultado.”<cite>Sample client, Oklahoma City</cite></blockquote>
+        <blockquote lang="en">“We had three bids from different companies. Victor spent more time explaining our options and his bid saved us money.”<cite>Chris Herbst, Google review</cite></blockquote>
+        <blockquote lang="en">“He has handled both my residential and commercial projects, and every experience has been outstanding.”<cite>Sushanth Ghanta, Google review</cite></blockquote>
+        <blockquote lang="en">“He sees things that I did not see yet and he fixes them before I even knew they were an issue.”<cite>Josh Soto, Google review</cite></blockquote>
       </div>
-      <p class="rev-note" data-i18n="rev_note"></p>
+      <p class="rev-note"><span data-vhp="rating"></span> ★, <span data-vhp="reviews"></span> <span data-i18n="rev_note"></span>. <a id="rev-link" href="#" data-i18n="rev_link"></a></p>
     </div>
   </section>
 
@@ -123,10 +122,13 @@
       <div>
         <h2 id="h-quote" data-i18n="quote_title"></h2>
         <p class="lede" data-i18n="quote_body"></p>
+        <p><strong data-i18n="quote_free"></strong></p>
         <ul class="contact-list">
           <li><span data-i18n="call"></span>: <a data-tel href="#" data-vhp="phone"></a></li>
           <li><a id="mail-link" href="#" data-vhp="email"></a></li>
-          <li><span data-i18n="serving"></span>: <span data-vhp="area"></span></li>
+          <li><span data-i18n="visit"></span>: <a class="map-link" href="#" target="_blank" rel="noopener" data-vhp="address"></a></li>
+          <li><span data-i18n="hours_l"></span>: <span data-vhp="hours"></span></li>
+          <li><span data-vhp="area"></span></li>
         </ul>
       </div>
       <form class="q" id="quote-form">
@@ -148,7 +150,7 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <div><strong>Vasquez Home Projects</strong><br><a data-tel href="#" data-vhp="phone"></a><br><span data-vhp="area"></span></div>
+    <div><strong>Vasquez Home Projects LLC</strong><br><a data-tel href="#" data-vhp="phone"></a><br><a class="map-link" href="#" target="_blank" rel="noopener" data-vhp="address"></a><br><span data-vhp="hours"></span><br><a class="fb-link" href="#" target="_blank" rel="noopener">Facebook</a> &nbsp; <a class="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></div>
     <p data-i18n="foot_disc"></p>
   </div>
 </footer>
@@ -189,6 +191,7 @@ form.addEventListener("submit", function (e) {
   document.getElementById("form-ok").hidden = false;
 });
 document.getElementById("mail-link").href = "mailto:" + VHP.email;
+document.getElementById("rev-link").href = VHP.mapUrl;
 var slabParam = new URLSearchParams(location.search).get("slab");
 if (slabParam) document.getElementById("f-msg").value = "Slab: " + slabParam + "\n";
 </script>
