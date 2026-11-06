@@ -46,26 +46,28 @@ p{margin:0 0 1em;max-width:62ch}
 .btn.ghost{background:transparent;border:1px solid currentColor;color:#fff}
 .btn.ghost:hover{background:rgba(255,255,255,.08)}
 
-/* hero: texto + "rack" de slabs */
-.hero{background:var(--slate);color:#fff;padding:72px 0 0;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px;align-items:end}
-.hero-copy{padding-bottom:72px}
-.hero-copy p{color:#CBD3D6;font-size:1.15rem}
+/* hero: slider de proyectos con zoom lento */
+.hero{position:relative;color:#fff;min-height:min(86vh,760px);display:flex;align-items:flex-end;overflow:hidden;background:var(--slate)}
+.slides{position:absolute;inset:0}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1);will-change:transform}
+.slide.is-on{opacity:1}
+.slide.is-zoom img{animation:kenburns 8s ease-out forwards}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.14)}}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,30,50,.82) 0%,rgba(13,30,50,.55) 38%,rgba(13,30,50,0) 70%),linear-gradient(0deg,rgba(13,30,50,.55) 0%,rgba(13,30,50,0) 40%)}
+.hero-inner{position:relative;width:100%;padding-top:96px;padding-bottom:64px}
+.hero-copy{max-width:600px}
+.hero-copy p{color:#E3E9EE;font-size:1.15rem}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.rack{display:flex;gap:14px;align-items:flex-end;height:540px}
-.rack figure{margin:0;flex:1;min-width:0;height:100%;display:flex;flex-direction:column}
-.rack figure:nth-child(2){height:88%}
-.rack figure:nth-child(3){height:76%}
-.rack img{flex:1;min-height:0;width:100%;object-fit:cover;box-shadow:0 -1px 0 rgba(255,255,255,.12)}
-.rack figcaption{background:#fff;color:var(--ink);padding:10px 12px;font-size:.85rem;line-height:1.35}
-.rack figcaption b{display:block;font-family:var(--serif);font-weight:400;font-size:1.05rem}
-.rack-note{color:#AEB8BC;font-size:.85rem;margin:24px 0 0}
-@media (max-width:860px){
-  .hero .wrap{grid-template-columns:1fr;gap:8px}
-  .hero-copy{padding-bottom:24px}
-  .rack{height:320px}
-  .rack figcaption{font-size:.75rem;padding:8px}
+.dots{display:flex;gap:8px;margin-top:40px}
+.dots button{width:28px;height:4px;border:0;padding:0;background:rgba(255,255,255,.4);cursor:pointer;border-radius:2px}
+.dots button[aria-current=true]{background:var(--green)}
+@media (max-width:700px){
+  .hero{min-height:620px}
+  .hero-shade{background:linear-gradient(0deg,rgba(13,30,50,.92) 0%,rgba(13,30,50,.6) 55%,rgba(13,30,50,.15) 100%)}
+  .hero-inner{padding-bottom:40px}
 }
+@media (prefers-reduced-motion:reduce){.slide.is-zoom img{animation:none}}
 
 section{padding:88px 0}
 @media (max-width:600px){section{padding:60px 0}}

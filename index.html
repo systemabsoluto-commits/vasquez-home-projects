@@ -29,7 +29,18 @@
 
 <main>
   <section class="hero" aria-labelledby="h-hero">
-    <div class="wrap">
+    <div class="slides" aria-hidden="false">
+      <picture class="slide is-on"><source media="(max-width:700px)" srcset="img/hero/hero-1-m.webp"><img src="img/hero/hero-1.webp" alt="Kitchen island with quartzite countertop" fetchpriority="high"></picture>
+      <picture class="slide"><source media="(max-width:700px)" srcset="img/hero/hero-2-m.webp"><img src="img/hero/hero-2.webp" alt="Kitchen with green cabinets and white countertops" loading="lazy"></picture>
+      <picture class="slide"><source media="(max-width:700px)" srcset="img/hero/hero-3-m.webp"><img src="img/hero/hero-3.webp" alt="Kitchen with navy waterfall island" loading="lazy"></picture>
+      <picture class="slide"><source media="(max-width:700px)" srcset="img/hero/hero-4-m.webp"><img src="img/hero/hero-4.webp" alt="White kitchen with large island" loading="lazy"></picture>
+      <picture class="slide"><source media="(max-width:700px)" srcset="img/hero/hero-5-m.webp"><img src="img/hero/hero-5.webp" alt="Blue double vanity with gold fixtures" loading="lazy"></picture>
+      <picture class="slide"><source media="(max-width:700px)" srcset="img/hero/hero-6-m.webp"><img src="img/hero/hero-6.webp" alt="Double vanity with black cabinets" loading="lazy"></picture>
+      <picture class="slide"><source media="(max-width:700px)" srcset="img/hero/hero-7-m.webp"><img src="img/hero/hero-7.webp" alt="Green kitchen with white countertops" loading="lazy"></picture>
+      <picture class="slide"><source media="(max-width:700px)" srcset="img/hero/hero-8-m.webp"><img src="img/hero/hero-8.webp" alt="Bathroom with white double vanity" loading="lazy"></picture>
+    </div>
+    <div class="hero-shade"></div>
+    <div class="wrap hero-inner">
       <div class="hero-copy">
         <h1 id="h-hero" data-i18n="hero_title"></h1>
         <p data-i18n="hero_body"></p>
@@ -37,13 +48,8 @@
           <a class="btn" href="catalog.html" data-i18n="hero_cta"></a>
           <a class="btn ghost" href="#quote" data-i18n="hero_cta2"></a>
         </div>
-        <p class="rack-note" data-i18n="rack_note"></p>
       </div>
-      <div class="rack">
-        <figure><img src="img/stratus/large/marble/calacatta-viola_honed_2cm_1102.webp" alt="Calacatta Viola marble slab"><figcaption><b>Calacatta Viola</b>Marble<br>Stratus Surfaces</figcaption></figure>
-        <figure><img src="img/stratus/large/quartzite/emerald-lagoon_polished_3cm_668.webp" alt="Emerald Lagoon quartzite slab"><figcaption><b>Emerald Lagoon</b>Quartzite<br>Stratus Surfaces</figcaption></figure>
-        <figure><img src="img/stratus/large/quartzite/crystallo-patagonia-blue_polished_3cm_1211.webp" alt="Crystallo Patagonia Blue quartzite slab"><figcaption><b>Patagonia Blue</b>Quartzite<br>Stratus Surfaces</figcaption></figure>
-      </div>
+      <div class="dots" role="group" aria-label="Slides"><button type="button" aria-label="Slide 1" aria-current="true"></button><button type="button" aria-label="Slide 2"></button><button type="button" aria-label="Slide 3"></button><button type="button" aria-label="Slide 4"></button><button type="button" aria-label="Slide 5"></button><button type="button" aria-label="Slide 6"></button><button type="button" aria-label="Slide 7"></button><button type="button" aria-label="Slide 8"></button></div>
     </div>
   </section>
 
@@ -160,6 +166,7 @@
 <script src="js/config.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/common.js"></script>
+<script src="js/hero.js"></script>
 <script>
 // Destacados: nombres de colores del catalogo (cambiar aqui para mostrar otros)
 var FEATURED = [["a","Taj Mahal"],["a","Unique Calacatta Gold"],["s","Calacatta Lumiere"],["a","White Ice"],
