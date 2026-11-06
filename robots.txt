@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vasquezhomeproject.com/sitemap.xml
