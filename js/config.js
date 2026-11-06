@@ -10,6 +10,8 @@ window.VHP = {
   hours: { en: "Mon–Fri 8:30 AM–5 PM", es: "Lun–Vie 8:30 AM–5 PM" },
   area: { en: "Serving all of Oklahoma", es: "Atendemos todo Oklahoma" },
   rating: "4.5", reviews: "43",
+  whatsapp: "14054084868", // TODO: confirmar que este numero tiene WhatsApp
+  bbbAccredited: false,     // poner true solo cuando BBB muestre "BBB Accredited"
   facebook: "https://www.facebook.com/vasquezhomeprojectsllc",
   instagram: "https://www.instagram.com/vasquezhomeprojects/",
   suppliers: {

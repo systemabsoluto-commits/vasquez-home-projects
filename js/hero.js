@@ -20,3 +20,20 @@
   document.addEventListener("visibilitychange", function () { document.hidden ? clearInterval(timer) : start(); });
   show(0); start();
 })();
+
+// Galeria de inspiracion: filtro cocinas/baños y vista ampliada
+(function () {
+  var grid = document.getElementById("ph-grid"); if (!grid) return;
+  var dlg = document.getElementById("ph-dlg"), big = document.getElementById("ph-big");
+  document.querySelectorAll(".insp-filter .chip").forEach(function (b, _, all) {
+    b.addEventListener("click", function () {
+      all.forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+      grid.querySelectorAll(".ph-tile").forEach(function (t) { t.hidden = b.dataset.f !== "all" && t.dataset.cat !== b.dataset.f; });
+    });
+  });
+  grid.querySelectorAll(".ph-tile").forEach(function (t) {
+    t.addEventListener("click", function () { var i = t.querySelector("img"); big.src = t.dataset.full; big.alt = i.alt; dlg.showModal(); });
+  });
+  document.getElementById("ph-close").onclick = function () { dlg.close(); };
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+})();

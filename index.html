@@ -19,6 +19,7 @@
     <button class="menu-btn" aria-label="Menu" aria-expanded="false">&#9776;</button>
     <nav class="nav-links">
       <a href="catalog.html" data-i18n="nav_catalog"></a>
+      <a href="#inspiration" data-i18n="nav_insp"></a>
       <a href="#services" data-i18n="nav_services"></a>
       <a href="#process" data-i18n="nav_process"></a>
       <a class="btn" href="#quote" data-i18n="nav_contact"></a>
@@ -52,6 +53,15 @@
       <div class="dots" role="group" aria-label="Slides"><button type="button" aria-label="Slide 1" aria-current="true"></button><button type="button" aria-label="Slide 2"></button><button type="button" aria-label="Slide 3"></button><button type="button" aria-label="Slide 4"></button><button type="button" aria-label="Slide 5"></button><button type="button" aria-label="Slide 6"></button><button type="button" aria-label="Slide 7"></button><button type="button" aria-label="Slide 8"></button></div>
     </div>
   </section>
+
+  <aside class="recog" aria-label="Recognition">
+    <div class="wrap">
+      <p class="recog-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 15.6 6.6 18.5l1.2-6L3.3 8.3l6.1-.7z"/></svg><span data-i18n="rec_award1"></span></p>
+      <p class="recog-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 7h-3v10h-5v-6h-2v6H6V10H3z"/></svg><span data-i18n="rec_award2"></span></p>
+      <p class="recog-item bbb" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z"/></svg><span data-i18n="rec_bbb"></span></p>
+      <p class="recog-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 15.6 6.6 18.5l1.2-6L3.3 8.3l6.1-.7z"/></svg><span><span data-vhp="rating"></span>, <span data-vhp="reviews"></span> <span data-i18n="rev_note"></span></span></p>
+    </div>
+  </aside>
 
   <section class="suppliers" aria-labelledby="h-sup">
     <div class="wrap">
@@ -113,17 +123,42 @@
     </div>
   </section>
 
-  <section class="reviews" aria-labelledby="h-rev">
+  <section class="inspiration" id="inspiration" aria-labelledby="h-insp">
     <div class="wrap">
-      <h2 id="h-rev" data-i18n="rev_title"></h2>
-      <div class="rev-grid">
-        <blockquote lang="en">“We had three bids from different companies. Victor spent more time explaining our options and his bid saved us money.”<cite>Chris Herbst, Google review</cite></blockquote>
-        <blockquote lang="en">“He has handled both my residential and commercial projects, and every experience has been outstanding.”<cite>Sushanth Ghanta, Google review</cite></blockquote>
-        <blockquote lang="en">“He sees things that I did not see yet and he fixes them before I even knew they were an issue.”<cite>Josh Soto, Google review</cite></blockquote>
+      <h2 id="h-insp" data-i18n="insp_title"></h2>
+      <p class="lede" data-i18n="insp_body"></p>
+      <div class="coll insp-filter" role="group" aria-label="Filter">
+        <button type="button" class="chip" data-f="all" aria-pressed="true" data-i18n="insp_all"></button>
+        <button type="button" class="chip" data-f="k" aria-pressed="false" data-i18n="insp_k"></button>
+        <button type="button" class="chip" data-f="b" aria-pressed="false" data-i18n="insp_b"></button>
       </div>
-      <p class="rev-note"><span data-vhp="rating"></span> ★, <span data-vhp="reviews"></span> <span data-i18n="rev_note"></span>. <a id="rev-link" href="#" data-i18n="rev_link"></a></p>
+      <!-- Fotos de proyectos propios. Para agregar mas: copiar un boton y cambiar data-cat (k=cocina, b=baño) y las rutas -->
+      <div class="ph-grid" id="ph-grid">
+        <button type="button" class="ph-tile" data-cat="k" data-full="img/hero/hero-1.webp"><img loading="lazy" src="img/gallery/p1.webp" alt="Quartzite island with waterfall edge"></button>
+        <button type="button" class="ph-tile" data-cat="k" data-full="img/hero/hero-2.webp"><img loading="lazy" src="img/gallery/p2.webp" alt="Green shaker kitchen, white quartz"></button>
+        <button type="button" class="ph-tile" data-cat="k" data-full="img/hero/hero-3.webp"><img loading="lazy" src="img/gallery/p3.webp" alt="Navy island with marble-look top"></button>
+        <button type="button" class="ph-tile" data-cat="k" data-full="img/hero/hero-4.webp"><img loading="lazy" src="img/gallery/p4.webp" alt="White kitchen with large island"></button>
+        <button type="button" class="ph-tile" data-cat="b" data-full="img/hero/hero-5.webp"><img loading="lazy" src="img/gallery/p5.webp" alt="Navy double vanity, white quartz"></button>
+        <button type="button" class="ph-tile" data-cat="b" data-full="img/hero/hero-6.webp"><img loading="lazy" src="img/gallery/p6.webp" alt="Black double vanity"></button>
+        <button type="button" class="ph-tile" data-cat="k" data-full="img/hero/hero-7.webp"><img loading="lazy" src="img/gallery/p7.webp" alt="Sage kitchen with window sink"></button>
+        <button type="button" class="ph-tile" data-cat="b" data-full="img/hero/hero-8.webp"><img loading="lazy" src="img/gallery/p8.webp" alt="White double vanity"></button>
+      </div>
+
+      <div class="insp-reviews">
+        <h3 data-i18n="insp_rev"></h3>
+        <div class="rev-grid">
+          <figure><blockquote lang="en">“Victor spent more time explaining our options and his bid saved us money. He always kept in touch with us and was here almost every day that workers were here.”</blockquote><figcaption>Chris Herbst ★★★★★</figcaption></figure>
+          <figure><blockquote lang="en">“He sees things that I did not see yet and he fixes them before I even knew they were an issue. I have used Victor on two major projects.”</blockquote><figcaption>Josh Soto ★★★★★</figcaption></figure>
+          <figure><blockquote lang="en">“He has handled both my residential and commercial projects, and every experience has been outstanding. Great attention to detail.”</blockquote><figcaption>Sushanth Ghanta ★★★★★</figcaption></figure>
+          <figure><blockquote lang="en">“Their prices and the quality are unmatched.”</blockquote><figcaption>Google review ★★★★★</figcaption></figure>
+          <figure><blockquote lang="en">“Super friendly and professional people, a pleasure to work with.”</blockquote><figcaption>Google review ★★★★★</figcaption></figure>
+        </div>
+        <p class="rev-note"><span data-vhp="rating"></span> ★, <span data-vhp="reviews"></span> <span data-i18n="rev_note"></span>. <a id="rev-link" href="#" data-i18n="rev_link"></a></p>
+      </div>
     </div>
   </section>
+
+  <dialog class="ph-dlg" id="ph-dlg"><button class="dlg-close" id="ph-close" aria-label="Close">&times;</button><img id="ph-big" alt=""></dialog>
 
   <section class="quote" id="quote" aria-labelledby="h-quote">
     <div class="wrap">
@@ -131,6 +166,7 @@
         <h2 id="h-quote" data-i18n="quote_title"></h2>
         <p class="lede" data-i18n="quote_body"></p>
         <p><strong data-i18n="quote_free"></strong></p>
+        <ul class="recog-mini"><li data-i18n="rec_award1"></li><li data-i18n="rec_award2"></li><li class="bbb" hidden data-i18n="rec_bbb"></li></ul>
         <ul class="contact-list">
           <li><span data-i18n="call"></span>: <a data-tel href="#" data-vhp="phone"></a></li>
           <li><a id="mail-link" href="#" data-vhp="email"></a></li>
@@ -162,6 +198,11 @@
     <p data-i18n="foot_disc"></p>
   </div>
 </footer>
+
+<div class="fab" role="group" aria-label="Contact">
+  <a class="fab-wa" id="fab-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.5-.4z"/></svg><span data-i18n="wa_label"></span></a>
+  <a class="fab-call" data-tel href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span data-i18n="call_label"></span></a>
+</div>
 
 <script src="js/config.js"></script>
 <script src="js/i18n.js"></script>

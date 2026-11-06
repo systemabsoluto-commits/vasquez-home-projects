@@ -1,6 +1,15 @@
 // Textos EN/ES. Cada elemento con data-i18n="clave" toma su texto de aqui.
 window.I18N = {
   en: {
+    nav_insp: "Inspiration",
+    insp_title: "Inspiration from finished projects",
+    insp_body: "Kitchens and bathrooms we have completed in Oklahoma. Tap a photo to see it larger.",
+    insp_all: "All", insp_k: "Kitchens", insp_b: "Bathrooms",
+    insp_rev: "What our clients say",
+    rec_title: "Recognition",
+    rec_award1: "Best Home Improvement award", rec_award2: "Home & Garden Show Oklahoma",
+    rec_bbb: "BBB Accredited Business",
+    wa_label: "Message us on WhatsApp", call_label: "Call us", wa_text: "Hi, I would like a quote for countertops.",
     nav_catalog: "Slab catalog", nav_services: "Services", nav_process: "How it works", nav_contact: "Get a quote",
     hero_title: "Countertops cut from the slab you pick",
     hero_body: "Choose from more than 800 slabs in stock right now in Oklahoma City. We measure for free, fabricate in our shop on S Meridian Ave and install anywhere in Oklahoma.",
@@ -47,6 +56,15 @@ window.I18N = {
     lang_btn: "ES"
   },
   es: {
+    nav_insp: "Inspiración",
+    insp_title: "Inspiración de proyectos terminados",
+    insp_body: "Cocinas y baños que hemos terminado en Oklahoma. Toca una foto para verla en grande.",
+    insp_all: "Todos", insp_k: "Cocinas", insp_b: "Baños",
+    insp_rev: "Lo que dicen nuestros clientes",
+    rec_title: "Reconocimientos",
+    rec_award1: "Premio Best Home Improvement", rec_award2: "Home & Garden Show Oklahoma",
+    rec_bbb: "Negocio acreditado por BBB",
+    wa_label: "Escríbenos por WhatsApp", call_label: "Llámanos", wa_text: "Hola, quiero una cotización de encimeras.",
     nav_catalog: "Catálogo de slabs", nav_services: "Servicios", nav_process: "Cómo trabajamos", nav_contact: "Cotizar",
     hero_title: "Encimeras cortadas del slab que tú eliges",
     hero_body: "Elige entre más de 800 slabs en stock hoy en Oklahoma City. Medimos gratis, fabricamos en nuestro taller de S Meridian Ave e instalamos en todo Oklahoma.",
@@ -106,6 +124,9 @@ window.I18N = {
       var v = VHP[el.dataset.vhp]; el.textContent = typeof v === "object" ? v[vhpLang] : v;
     });
     document.querySelectorAll("a[data-tel]").forEach(function (a) { a.href = "tel:" + VHP.phoneHref; });
+    var wa = document.getElementById("fab-wa");
+    if (wa) wa.href = "https://wa.me/" + VHP.whatsapp + "?text=" + encodeURIComponent(t("wa_text"));
+    document.querySelectorAll(".bbb").forEach(function (el) { el.hidden = !VHP.bbbAccredited; });
     document.querySelectorAll("a.map-link").forEach(function (a) { a.href = VHP.mapUrl; });
     document.querySelectorAll("a.fb-link").forEach(function (a) { a.href = VHP.facebook; });
     document.querySelectorAll("a.ig-link").forEach(function (a) { a.href = VHP.instagram; });
